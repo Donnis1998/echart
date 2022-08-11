@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-dropdowns/styles/material.css";
+
+.my_tooltip {
+  width: 300px;
+  max-height: 350px;
+  overflow-y: scroll;
+  word-break: keep-all;
+  text-align: justify;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info-content {
+  width: 96%;
+  height: 100%;
+  padding: 5px;
+  /* background-color: rgb(244, 244, 244); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list-paragraphs {
+  max-width: 300px;
+  max-height: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  margin-inline: 10px;
+  margin-block: 15px;
+  font-size: 20px;
+  color: cadetblue;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-inline: 10px;
+  margin-bottom: -5px;
+}
+
+.paragraph {
+  margin-top: 10px;
+  font-size: 16px;
+  color: gray;
+  margin-inline: 10px;
+}
+
+.headerTooltip {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.node-card {
+  max-width: 200px;
+  height: min-content;
+  background-color: rgb(244, 244, 244);
+  padding: 1px;
+  margin-block: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.node-subtitle {
+  font-size: 13px;
+  font-weight: bold;
+  margin-inline: 10px;
+  margin-bottom: -10px;
+}
+
+.node-paragraph {
+  font-size: 12px;
+  color: gray;
+  margin-inline: 10px;
+  word-break: break-all;
+}
+
+/* Estilos para Scroll en motores Webkit y blink (Chrome, Safari, Opera... )*/
+.contenedor {
+  margin-bottom: 10px;
+}
+
+.contenedor::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.contenedor::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background-color: cadetblue;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.contenedor::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
